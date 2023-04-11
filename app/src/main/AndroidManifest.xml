@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.buaacourse">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/cover"
+        android:label="航课"
+        android:largeHeap="true"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:targetApi="n">
+        <activity
+            android:name=".course.CourseInfo"
+            android:exported="false" />
+        <activity
+            android:name=".person.personCollect"
+            android:exported="false" />
+        <activity
+            android:name=".person.PersonInfo"
+            android:exported="false" />
+        <activity
+            android:name=".tools.Tools"
+            android:exported="false" />
+        <activity
+            android:name=".person.personMoments"
+            android:exported="false">
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+        </activity>
+        <activity
+            android:name=".person.PersonFans"
+            android:exported="false" />
+        <activity
+            android:name=".person.PersonFollow"
+            android:exported="false" />
+        <activity
+            android:name=".person.PersonhomeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".course.PostDiscuss"
+            android:exported="false" />
+        <activity
+            android:name=".home.SearchCourse"
+            android:exported="false" />
+        <activity
+            android:name=".course.CourseBone"
+            android:exported="false" />
+        <activity
+            android:name=".course.personQuestion"
+            android:exported="false" />
+        <activity
+            android:name=".course.personComment"
+            android:exported="false" />
+        <activity
+            android:name=".home.Home"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".auth.ConfirmReset"
+            android:exported="false" />
+        <activity
+            android:name=".auth.Reset"
+            android:exported="false" />
+        <activity
+            android:name=".auth.Register"
+            android:exported="false" />
+        <activity
+            android:name=".auth.Login"
+            android:exported="false" />
+        <activity
+            android:name=".course.PostComment"
+            android:exported="false" />
+    </application>
+
+</manifest>
